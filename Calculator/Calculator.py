@@ -12,18 +12,18 @@ print("1. Addition")
 print("2. Subtraction ")
 print("3. Multiplication")
 print("4. division")
-choice = int(input("Enter your choice:"))
+choice = input("Enter your choice:")
 a=int(input("Enter first number:"))
 b=int(input("Enter second number:"))
 
-switch(choice):
-   case '1': print(a+"+"+b+"="+add(a,b))
-            break;
-   case '2': print(a+"-"+b+"="+sub(a,b))
-            break;
-   case '3': print(a+"*"+b+"="+mul(a,b))
-            break;
-   case '4':if( b!=0):
-              print(a+"/"+b+"="+div(a,b))
-            else:
-            break;
+if choice== '1':
+   print(f"{a}+{b}={add(a,b)}")
+elif choice=='2': 
+   print(f"{a}-{b}={sub(a,b)}")
+elif choice=='3': 
+   print(f"{a}*{b}={mul(a,b)}")
+elif choice=='4':
+   if( b!=0):
+       print(f"{a}/{b}={div(a,b)}")
+   else:
+       print("undefined") 
